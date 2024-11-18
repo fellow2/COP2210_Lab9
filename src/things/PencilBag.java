@@ -12,9 +12,9 @@ public class PencilBag {
         return pens;
     }
     public void displayContains(){
-        for(Object pens: pens){
-            if(pens instanceof Pen) {
-                ((Pen) pens).displayInfo();
+        for(Object PencilBag: pens){
+            if(PencilBag instanceof Pen) {
+                ((Pen) PencilBag).displayInfo();
             }
         }
     }
