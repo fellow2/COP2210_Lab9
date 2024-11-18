@@ -10,7 +10,7 @@ public class Book {
 
     public Book(String subject, double price){
         this.subject = subject;
-        this.price = rndGen.nextDouble(100, 201);
+        this.price = rndGen.nextDouble(50, 201);
     }
     public String getSubject(){
         return subject;
@@ -19,7 +19,7 @@ public class Book {
         return price;
     }
     public void displayInfo(){
-        System.out.printf("Type-> Book-> \t\t\t  Subject: %-10s \t\t\t\t\t\t\t Price: %.2f\n", subject, price);
+        System.out.printf("Type-> Book-> \t\t\t  Subject: %-10s \t\t\t\t\t\t\t Price:  %6.2f\n", subject, price);
     }
 }
 

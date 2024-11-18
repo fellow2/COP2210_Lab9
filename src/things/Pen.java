@@ -10,7 +10,7 @@ public class Pen {
 
     public Pen(String color, double price){
         this.color = color;
-        this.price = rndGen.nextDouble(0, 2);
+        this.price = rndGen.nextDouble(1, 4.01);
     }
     public String getColor(){
         return color;
@@ -19,6 +19,6 @@ public class Pen {
         return price;
     }
     public void displayInfo(){
-        System.out.printf("Type-> Pen-> \t Color:%7s \t\t Price: %.2f\n", color, price);
+        System.out.printf("Type-> Pen-> \t\t\t  Color: %-7s \t\t\t\t\t\t\t\t Price:  %6.2f\n", color, price);
     }
 }

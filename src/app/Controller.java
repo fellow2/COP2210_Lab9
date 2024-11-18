@@ -37,7 +37,6 @@ public class Controller {
 
             String phoneNumber = "(" + areaCode + ")-" + threeDigit + "-" + fourDigit;
             Phone phone = new Phone(phoneNumber);
-            phone.getPrice();
             bookBag.getItems().add(phone);
 
         }
@@ -63,6 +62,12 @@ public class Controller {
         }
 
         bookBag.displayItems();
+
+        System.out.println();
+        System.out.println("--------------------------------");
+        System.out.println("Total Price of Possessions");
+        System.out.println("--------------------------------");
+        System.out.printf("Total: $%.2f", person.totalPriceOfPossessions());
     }
     public static void yourInfoHeader(){
         System.out.println("========================================");

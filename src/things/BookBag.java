@@ -31,8 +31,11 @@ public class BookBag {
             if(item instanceof Book){
                 ((Book) item).displayInfo();
             }
-            if(item instanceof PencilBag){
+            if(item instanceof PencilBag) {
                 ((PencilBag) item).displayContains();
+            }
+            if(item instanceof Person){
+                ((Person) item).totalPriceOfPossessions();
             }
         }
     }

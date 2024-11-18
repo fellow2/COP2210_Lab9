@@ -19,6 +19,6 @@ public class Phone {
         return price;
     }
     public void displayInfo(){
-        System.out.printf("Type-> Phone-> \t\t\t  %13s \t\t\t\t\t\t\t\t Price: %.2f\n", number, price);
+        System.out.printf("Type-> Phone-> \t\t\t  %13s \t\t\t\t\t\t\t\t Price: %7.2f\n", number, price);
     }
 }
